@@ -1,9 +1,15 @@
-# Rename edited iOS images
+# Rename edited iOS images and remove AAE files
 
 ## About
 
 ---
+Renaming files:
+
 iOS saves edited images on the device with the additional letter 'E'. The below tools rename all edited images in such a way that the letter 'E' is removed form the filename so all the pictures names are consistent.
+
+Removing .AAE files:
+
+Editing pictures in iOS produces additional .AAE files with edition metadata. These files can be removed.
 
 Exemplary use case:
 
@@ -20,12 +26,16 @@ Output name: IMG_456.JPG
 Run the bash script inside the directory where the files are located:
 
 ```aidl
-Run on linux:
-
 ./rename_edited_iOS_images.sh
 ```
 
-## Java version:
+Run the bash script inside the directory where .AAE files are located:
+
+```aidl
+./remove_aae.sh.sh
+```
+
+## Java version to rename files:
 
 --- 
 
